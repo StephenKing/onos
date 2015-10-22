@@ -2,7 +2,7 @@ language: java
 jdk:
 - oraclejdk8
 env:
-- ONOS_ROOT=/home/travis/StephenKing/onos
+- ONOS_ROOT=$TRAVIS_BUILD_DIR
 before_script:
 - source $ONOS_ROOT/tools/dev/bash_profile
 - "echo KARAF_TAR=$KARAF_TAR"
