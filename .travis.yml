@@ -4,7 +4,7 @@ jdk:
 env:
 - ONOS_ROOT=/home/travis/StephenKing/onos
 before_script:
-- $ONOS_ROOT/tools/dev/bash_profile
+- source $ONOS_ROOT/tools/dev/bash_profile
 - "echo KARAF_TAR=$KARAF_TAR"
 after_success:
 - onos-package
