@@ -6,7 +6,8 @@ env:
 before_script:
 - source $ONOS_ROOT/tools/dev/bash_profile
 after_success:
-- source $ONOS_ROOT/tools/dev/bash_profile
+- export ONOS_ROOT=$TRAVIS_BUILD_DIR
+- source $TRAVIS_BUILD_DIR/tools/dev/bash_profile
 - onos-package
 
 
