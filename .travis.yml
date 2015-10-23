@@ -8,7 +8,6 @@ env:
 before_script:
 - source $ONOS_ROOT/tools/dev/bash_profile
 after_success:
-- source $ONOS_ROOT/tools/dev/bash_profile
 - onos-package
 notifications:
   email: st+travis-onos-test@st-g.de
