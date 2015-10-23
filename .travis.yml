@@ -11,20 +11,17 @@ before_script:
 after_success:
 - source $ONOS_ROOT/tools/dev/bash_profile
 - onos-package
-
-
 notifications:
   email: st+travis-onos-test@st-g.de
 deploy:
   provider: releases
   api_key:
-    secure: fccTJAY1UzGyH/s6FfWoEfPl8UsoELREujWkcBvftnLOwgBI432BuMpSpMD6koizPThOm6RZzQAMz5h6/4gTg+UDVxvHaEOn9DCGagapOTLmD+Oxl6hKuti37DE7K5iuqHyWru+Y1452/Iik0hdjx8EIZJYNPPq2GqwuEk/GeJ1tBhLrqIw0RvLU+tkMW8Qb/DMNH2iTV2mQ+d0b/+B6+2ZU6N9jcnaWx7mB5jc4hmGtVCOrPgQRkD7JaabbY+Ok85CO5GNywJkL98a6y//ZRWyWxmteITyjFw2aiuyMJRhApiSG0D2R578U+ThXbWRh9dsnyfznRwjQOfGYtc8XG+TNTywEJlV5QJYA2PZefQokGbkzAedEYvyiqg+YVvlxeNtpC8C6gWTTny3jZVqMHjLF7GwmTAu5f7UxbJDLYUwZ79Tki2mFRkybZg8lI+e1cn1ajciscMjn3mLG8TLBukuNx2uEvnlrSxlQwpTQVqH3U3dZGZSe8kyfkmimRXub5M37g9x/eoHqGRdMrs/IGKk2ijKAwo9Q2hrPiljlaT0GKaAB1OXZ9xFkzerKvc+ZfMJwFDzl3pJqAFQLl3c+055mE+ZAmXadnLfklg6cViTpUGmC2K0EwaBCZGMu6GyNsZf2tXJNMOAbKtxof2rG8i36cdTGcMiUngRXdhuhHHg=
+    secure: BIu61RXW8ltgd7UJbHgVODh4jZwyA/HqSObsLMEqWKfh+TMgE2Zu0spA9c2EKxtv2fOujaJtVkP3ZmgwR5UeJVeDilAPn8OzAAHxRgSO/uX0vHIEUb6yU6zItE/SuZ1KSYoBIZ6qRbowxlVYHCNz2X6SjalwWoeb+i1/PJ7MWB4zHNGfCeiaRgeSGRe0jA/O3EzijeSjx9dyXa/c2CN5B0luFBTXs9cOH+VkaKN6N1IUBHNKWVJPfgPXgTSlu7cTS1sDXRdXicl77snPc7og29sjNww2d7aK1i6LfuTWVPtw5gUPYHzVoSlDxlHaYCCROn/fPto2j3/XAvX08mzrEZuyk72JvMpbwE/NPRjMzrzal0xjd7Byvxyktn6ztp76sDV0HhLrZubCE8P19sMSx3NDuFD0y5FMGUeCLdnNC4JfTa2k3yl4zK78KlqAQtlRiidHYkKh0qqcj3NRxyLLJtU3UipxziKtv0mH8jz4y0wMy3Is5uKTtKqU36+FQrByt5udHj7aqKVVX+uG8MCnqQ/6NAWvhp+wrpsHZJH4lA/kONKIQUR20SgBHkyE4fd0EPHc9Jt6Bb3by5SxF+G3dIsDT1fDH8E+NwrxB1cup4fKv8ABBdp4dI4LNr95CaSQMOWnvCqNn8eSXO+q8xqiy0LW0SzOGKwNeYXxCphoEyg=
   file:
-  - /tmp/onos-1.4.0.travis.tar.gz
+#  - /tmp/onos-1.4.0.travis.tar.gz
   - /tmp/onos-1.4.0.travis.zip
   on:
     repo: StephenKing/onos
-    tags: true
     branch: travis-ci
 after_deploy:
-- "echo 'deployed!'"
+- echo 'deployed!'
