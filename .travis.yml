@@ -23,5 +23,6 @@ deploy:
   on:
     repo: StephenKing/onos
     branch: travis-ci
+    tags: true
 after_deploy:
 - echo 'deployed!'
