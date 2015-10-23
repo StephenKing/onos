@@ -4,7 +4,6 @@ jdk:
 env:
   global:
   - ONOS_ROOT=$TRAVIS_BUILD_DIR
-  - KARAF_VERSION=3.0.3
   - KARAF_TAR=/tmp/apache-karaf-$KARAF_VERSION.tar.gz
 before_script:
 - source $ONOS_ROOT/tools/dev/bash_profile
